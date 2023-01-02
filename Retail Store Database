@@ -1,0 +1,26 @@
+--Create a retail store database
+
+CREATE TABLE merchandise (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, department TEXT);
+
+INSERT INTO merchandise VALUES (1, "necklace", 5, 17.99, "jewelry");
+INSERT INTO merchandise VALUES (2, "earrings", 8, 14.99, "jewelry");
+INSERT INTO merchandise VALUES (3, "wallet", 9, 19.99, "accessories");
+INSERT INTO merchandise VALUES (4, "sweater", 12, 25.99, "apparel");
+INSERT INTO merchandise VALUES (5, "jeans", 14, 29.99, "apparel");
+INSERT INTO merchandise VALUES (6, "leggings", 9, 14.99, "apparel");
+INSERT INTO merchandise VALUES (7, "purse", 10, 32.99, "accessories");
+INSERT INTO merchandise VALUES (8, "travel_bag", 5, 34.99, "accessories");
+INSERT INTO merchandise VALUES (9, "socks", 14, 9.99, "accessories");
+INSERT INTO merchandise VALUES (10, "tank_top", 12, 9.99, "apparel");
+INSERT INTO merchandise VALUES (11, "tee_shirt", 15, 14.99, "apparel");
+INSERT INTO merchandise VALUES (12, "dress", 12, 27.99, "apparel");
+INSERT INTO merchandise VALUES (13, "sandals", 8, 16.99, "shoes");
+INSERT INTO merchandise VALUES (14, "boots", 9, 34.99, "shoes");
+INSERT INTO merchandise VALUES (15, "flannel_shirt", 10, 19.99, "apparel");
+SELECT * FROM merchandise;
+
+--Display the database order by price
+SELECT * FROM merchandise ORDER BY price;
+
+--Display the total quantity of items
+SELECT SUM(quantity) FROM merchandise;
